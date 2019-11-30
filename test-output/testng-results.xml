@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-11-19T11:09:38 IST" name="Default suite" finished-at="2019-11-19T11:10:08 IST" duration-ms="29971">
+    <groups>
+    </groups>
+    <test started-at="2019-11-19T11:09:38 IST" name="Default test" finished-at="2019-11-19T11:10:08 IST" duration-ms="29971">
+      <class name="tests.LoginPageTest">
+        <test-method is-config="true" signature="beforesuite(org.testng.ITestContext)[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:36 IST" name="beforesuite" finished-at="2019-11-19T11:09:38 IST" duration-ms="1906" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4faa298]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforesuite -->
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:38 IST" name="beforeTest" finished-at="2019-11-19T11:09:38 IST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4faa298]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="launchingBrowser()[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:38 IST" name="launchingBrowser" finished-at="2019-11-19T11:09:52 IST" depends-on-methods="frameWork.ConfigMethods.beforeTest" duration-ms="14088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchingBrowser -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:52 IST" name="BeforeMethod" finished-at="2019-11-19T11:09:52 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.vaildateLogo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="vaildateLogo()[pri:1, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:52 IST" name="vaildateLogo" finished-at="2019-11-19T11:09:52 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vaildateLogo -->
+        <test-method is-config="true" signature="writeReport(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:52 IST" name="writeReport" finished-at="2019-11-19T11:09:53 IST" duration-ms="849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=vaildateLogo status=SUCCESS method=LoginPageTest.vaildateLogo()[pri:1, instance:tests.LoginPageTest@59d016c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeReport -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:53 IST" name="BeforeMethod" finished-at="2019-11-19T11:09:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.vaidateTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="vaidateTitle()[pri:2, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:53 IST" name="vaidateTitle" finished-at="2019-11-19T11:09:53 IST" duration-ms="16" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [CRMPRO - CRa software for customer relationship management, sales, and support.] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [CRMPRO - CRa software for customer relationship management, sales, and support.] but found [CRMPRO - CRM software for customer relationship management, sales, and support.]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at tests.LoginPageTest.vaidateTitle(LoginPageTest.java:35)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- vaidateTitle -->
+        <test-method is-config="true" signature="writeReport(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:53 IST" name="writeReport" finished-at="2019-11-19T11:09:54 IST" duration-ms="790" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=vaidateTitle status=FAILURE method=LoginPageTest.vaidateTitle()[pri:2, instance:tests.LoginPageTest@59d016c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeReport -->
+        <test-method is-config="true" signature="BeforeMethod(java.lang.reflect.Method)[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:54 IST" name="BeforeMethod" finished-at="2019-11-19T11:09:54 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LoginPageTest.Login()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method signature="Login()[pri:3, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:09:54 IST" name="Login" finished-at="2019-11-19T11:10:08 IST" duration-ms="13503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="writeReport(org.testng.ITestResult)[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:10:08 IST" name="writeReport" finished-at="2019-11-19T11:10:08 IST" duration-ms="352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=LoginPageTest.Login()[pri:3, instance:tests.LoginPageTest@59d016c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeReport -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:10:08 IST" name="afterTest" finished-at="2019-11-19T11:10:08 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="aftersuite()[pri:0, instance:tests.LoginPageTest@59d016c9]" started-at="2019-11-19T11:10:08 IST" name="aftersuite" finished-at="2019-11-19T11:10:09 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aftersuite -->
+      </class> <!-- tests.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
